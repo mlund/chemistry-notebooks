@@ -1,3 +1,4 @@
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mlund/chemistry-notebooks/master)
 # Chemistry Examples using Jupyter Notebooks
 
 ## Installation instructions
