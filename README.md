@@ -3,7 +3,7 @@
 
 ## Installation instructions
 
-1. Install [Anaconda](https://www.anaconda.com/download)
+1. Install [miniconda](https://conda.io/miniconda.html)
 2. Download this reposity.
 2. Download and activate the required packages using a terminal:
 ```bash
