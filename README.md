@@ -1,4 +1,5 @@
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mlund/chemistry-notebooks/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mlund/chemistry-notebooks/master?urlpath=lab)
+[![Binder2](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mlund/chemistry-notebooks/HEAD?urlpath=lab)
 # Chemistry Examples using Jupyter Notebooks
 
 ## Installation instructions
