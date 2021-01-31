@@ -1,5 +1,4 @@
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mlund/chemistry-notebooks/master?urlpath=lab)
-[![Binder2](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mlund/chemistry-notebooks/HEAD?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mlund/chemistry-notebooks/HEAD)
 # Chemistry Examples using Jupyter Notebooks
 
 ## Installation instructions
@@ -13,3 +12,8 @@
     jupyter-notebook
 ```
 
+## Running online
+
+Click on the _Binder_ banner above to open Jupyter online. You may also open in _JupyterLab_ by
+clicking [here](https://mybinder.org/v2/gh/mlund/chemistry-notebooks/HEAD?urlpath=lab) (this may
+have issues with nglview).

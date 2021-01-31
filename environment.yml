@@ -7,9 +7,12 @@ dependencies:
     - numpy
     - scipy
     - sympy
-    - ipywidgets
+    - ipywidgets>=7
     - matplotlib
     - notebook
     - jupyterlab
+    - nglview
+    - mdtraj
+    - nodejs>=10
     - widgetsnbextension
     - faunus=2.4.0
