@@ -16,3 +16,6 @@ dependencies:
     - nodejs>=10
     - widgetsnbextension
     - faunus=2.4.0
+    - pip
+    - pip:
+      - freesasa
