@@ -13,9 +13,10 @@ dependencies:
     - jupyterlab=3.0
     #- nglview
     - mdtraj
-    #- nodejs>=10
+    - nodejs>=10
     - widgetsnbextension=3.5
     #- faunus=2.4.0
     - pip
     - pip:
+      - ipymp
       - freesasa
