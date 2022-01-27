@@ -3,7 +3,7 @@ channels:
     - defaults
     - conda-forge
 dependencies:
-    - python=3.8
+    - python=3.7
     - numpy=1.19
     - scipy=1.6
     - sympy=1.8
@@ -11,12 +11,12 @@ dependencies:
     - matplotlib=3.3
     - notebook=6.4
     - jupyterlab=3.0
-    #- nglview
+    - nglview
     - mdtraj
     - nodejs>=10
     - widgetsnbextension=3.5
-    #- faunus=2.4.0
+    - faunus=2.4.0
     - pip
     - pip:
-      #- ipymp
+      - ipymp
       - freesasa
