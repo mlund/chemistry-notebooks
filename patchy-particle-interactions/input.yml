@@ -1,0 +1,44 @@
+#!/usr/bin/env yason.py
+
+geometry: {type: cuboid, length: 300}
+mcloop: {macro: 10, micro: 1000}
+temperature: 298.15
+random: {seed: fixed}
+
+atomlist:
+    - MP: {eps: 2.479, mw: 10000000, q: 0, sigma: 40} # mid-particle
+    - NP: {eps: 2.479, mw: 0.001, q: -1, sigma: 4.0}  # negative particle
+    - PP: {eps: 2.479, mw: 0.001, q: 1, sigma: 4.0}   # positive particle
+    - UP: {eps: 2.479, mw: 0.001, q: 0, sigma: 4.0}   # uncharged particle
+    - Na: {dp: 50, eps: 2.479, mw: 0.001, q: 1, sigma: 4.0}
+    - Cl: {dp: 50, eps: 2.479, mw: 0.001, q: -1, sigma: 4.0}
+
+energy:
+    - nonbonded_coulombwca:
+        wca: {mixing: LB}
+        coulomb: {type: yukawa, epsr: 78.7, molarity: 0.05}
+
+moleculelist:
+    - macroion1: {insdir: [0,0,0], structure: P00.xyz, rigid: true}
+    - macroion2: {insdir: [0,0,1], structure: P00.xyz, rigid: true}
+    - cations: {atomic: true, atoms: [Na]}
+    - anions: {atomic: true, atoms: [Cl]}
+
+insertmolecules:
+    - macroion1: {N: 1}
+    - macroion2: {N: 1}
+    # cations: {N: 16}
+
+moves:
+    - moltransrot: {molecule: macroion1, dp: 20, dprot: 2}
+    - moltransrot: {molecule: macroion2, dp: 20, dprot: 2}
+    # transrot: {molecule: cations}
+
+analysis:
+    - systemenergy: {nstep: 100, file: energy.dat}
+    - sanity: {nstep: 1000}
+    - atom_density: {nstep: 1000}
+    - molrdf: {nstep: 1, dim: 3, dr: 0.5, file: rdf12.dat, name1: macroion1, name2: macroion2}
+    - savestate: {file: confout.gro}
+    - savestate: {file: state.json}
+    - xtcfile: {file: traj.xtc, nstep: 100}
