@@ -7,6 +7,8 @@
 3. In a terminal, run `docker run -it -p 8888:8888 mikaellund/faunus:latest_x86`
    Omit `_x86` if using a newer mac with "Apple silicon", _i.e._ with an M1 ARM processor.
 4. Copy the generated link, _e.g._ `http://127.0.0.1:8888...`, into a web-browser.
+   This loads a _Jupyter Notebook_ - here's
+   [one of many](https://www.youtube.com/watch?v=jZ952vChhuI) introductory videos for how to use it.
 
 ## Topics
 
@@ -38,8 +40,6 @@ Run simulations and report your findings in a Jupyter Notebook; here are some gu
 - [ ] Results and discussion.
       Analysis of displacement parameters, acceptance, and convergence using e.g. the
       system energy as a function of steps. Discussion of results incl. plots.
-      This loads a _Jupyter Notebook_ - here's
-      [one of many](https://www.youtube.com/watch?v=jZ952vChhuI) introductory videos for how to use it.
 
 ## Self Check
   
