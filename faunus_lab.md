@@ -25,27 +25,28 @@ But I also have some suggestions:
   [Example input](https://github.com/mlund/faunus/blob/master/examples/fasta-titration.yml) 🥕🥕
 
 *You* decide what to investigate, but please consult with a teacher what you plan to do.
-More carrots mean more difficult, so pick only if you're comfortable with starting a new Notebook.
+More carrots mean more difficult, but mostly because no initial notebook exists.
 
 ## Coverage
 
-Run simulations and report your findings in a Jupyter Notebook.
-Here we some guidelines for what to include:
+Run simulations and report your findings in a Jupyter Notebook; here are some guidelines for what to include:
 - [ ] Introduction
-      Description of the studied system and what and how you plan to investigate it. Also include a <em>snapshot</em> or configuration from the simulation.</li>
+      Description of the studied system and what and how you plan to investigate it. Also include a <em>snapshot</em> or configuration from the simulation.
 - [ ] Methodology
       Description and motivation of the energy function used, _i.e._ model.
-      Description and motivation of the Monte Carlo moves used, <em>i.e. sampling technique</em></li>
+      Description and motivation of the Monte Carlo moves used, i.e. sampling technique
 - [ ] Results and discussion.
       Analysis of displacement parameters, acceptance, and convergence using e.g. the
       system energy as a function of steps. Discussion of results incl. plots.
-      This loads a _Jupyter Notebook_ - here's [one of many](https://www.youtube.com/watch?v=jZ952vChhuI) introductory videos for how to use it.
+      This loads a _Jupyter Notebook_ - here's
+      [one of many](https://www.youtube.com/watch?v=jZ952vChhuI) introductory videos for how to use it.
 
-## Self check
+## Self Check
   
 Can you explain the following simulation jargon?
   
-- [ ] acceptance
+- [ ] move acceptance
+- [ ] trial energy
 - [ ] displacement parameter
 - [ ] convergence
 - [ ] equilibration run
