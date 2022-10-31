@@ -1,5 +1,7 @@
 # Faunus Lab
 
+This is a lab for getting started with the simulation package [Faunus](https://faunus.readthedocs.io).
+
 ## Getting started
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop) (Mac, Windows, Linux, ...)
@@ -7,8 +9,20 @@
 3. In a terminal, run `docker run -it -p 8888:8888 mikaellund/faunus:latest_x86`
    Omit `_x86` if using a newer mac with "Apple silicon", _i.e._ with an M1 ARM processor.
 4. Copy the generated link, _e.g._ `http://127.0.0.1:8888...`, into a web-browser.
-   This loads a _Jupyter Notebook_ - here's
+   This loads a _Jupyter Notebook_ environment - here's
    [one of many](https://www.youtube.com/watch?v=jZ952vChhuI) introductory videos for how to use it.
+
+### Expert mode (not recommended)
+If you are more adventurous, you may also install Jupyter Notebook and Faunus
+on your local system by the following commands, assuming you have anaconda or miniconda installed:
+
+~~~ bash
+git clone https://github.com/mlund/chemistry-notebooks
+cd chemistry-notebooks
+conda env create -f environment.yml
+source activate LUchem
+jupyter-lab
+~~~
 
 ## Topics
 
