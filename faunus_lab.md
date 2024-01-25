@@ -6,8 +6,7 @@ This is a lab for getting started with the simulation package [Faunus](https://f
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop) (Mac, Windows, Linux, ...)
 2. Start Docker
-3. In a terminal, run `docker run -it -p 8888:8888 mikaellund/faunus:latest_x86`
-   Omit `_x86` if using a newer mac with "Apple silicon", _i.e._ with an M1 ARM processor.
+3. In a terminal, run `docker run -it -p 8888:8888 mikaellund/faunus:v2.11.0`
 4. Copy the generated link, _e.g._ `http://127.0.0.1:8888...`, into a web-browser.
    This loads a _Jupyter Notebook_ environment - here's
    [one of many](https://www.youtube.com/watch?v=jZ952vChhuI) introductory videos for how to use it.
