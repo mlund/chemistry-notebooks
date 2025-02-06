@@ -34,6 +34,7 @@ analysis:
     - systemenergy: {file: energy.dat, nstep: 50}
     - xtcfile: {file: traj.xtc, nstep: 5}
     - savestate: {file: confout.gro}
+    - reactioncoordinate: {nstep: 10, file: volume.dat.gz, type: system, property: V}
     #- savestate: {file: confout.pqr}
     - savestate: {file: state.json}
     #- density: {nstep: 50}
